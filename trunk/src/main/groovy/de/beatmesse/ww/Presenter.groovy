@@ -238,8 +238,6 @@ class Presenter {
 		extendedState: Frame.MAXIMIZED_BOTH,
 		defaultCloseOperation: JFrame.DISPOSE_ON_CLOSE) {
 			borderLayout()
-			//String labeltext = C_TEXT_HTML_PRE + "Great! Thanks! @Griff_Graff: that's 447 NEIA freshmen walking around knowing how to present EXCELLENTLY, no more \"Death by PowerPoint!\" laughw laughw laughw w" + C_TEXT_HTML_POST
-			//String labeltext = C_TEXT_HTML_PRE + "Ihre Fürbitte in der Beatmesse: per SMS an 01638888065 oder per Twitter an @beatmesse." + C_TEXT_HTML_POST
 			textlabel = widget(new FadeableLabel(),/*text: labeltext*/, 
 			constraints: BL.CENTER, 
 			verticalAlignment: SwingConstants.CENTER, 

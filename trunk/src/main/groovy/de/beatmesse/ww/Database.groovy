@@ -14,7 +14,7 @@ class Database {
 	/** JDBC user ID. */
 	static final String C_JDBC_CONN_USER_ID = "SA"
 	/** JDBC user password. */
-	static final String C_JDBC_CONN_USER_PW = "joki!"
+	static final String C_JDBC_CONN_USER_PW = "secret!"
 	/** JDBC class name for connection. */
 	static final String C_JDBC_CLASSNAME = "org.hsqldb.jdbc.JDBCDriver"
 	/** Maximum input length of message, should be equal to size of message column in mesg table. */
@@ -61,12 +61,6 @@ class Database {
 		C_JDBC_CONN_USER_ID,
 		C_JDBC_CONN_USER_PW, 
 		C_JDBC_CLASSNAME)
-		
-		// Add truncate method to String class.
-		//String.metaClass.truncate = { len ->
-		//	if (delegate == null) { return ''}
-		//	if (delegate.length() > len) { return delegate[0..(len-4)] + '...' }
-		//}
 		
 	}
 	
@@ -220,8 +214,8 @@ class Database {
 	 */
 	static main(args) {
 		Database myDb = new Database()
-		myDb.insertMessage new Message(source:Message.C_SMS, sender:"+4915150523868", message:"Neue Objekte.")
-		myDb.insertMessage new Message(source:Message.C_TWITTER, sender:"+4915150523868", message:"Neue Objekte.")
+		myDb.insertMessage new Message(source:Message.C_SMS, sender:"+491511234", message:"Neue Objekte.")
+		myDb.insertMessage new Message(source:Message.C_TWITTER, sender:"+491511234", message:"Neue Objekte.")
 		myDb.printAllMesgs()
 		println myDb.getMessage(4)
 		int stage = 0
