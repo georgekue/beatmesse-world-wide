@@ -33,7 +33,7 @@ class TwitterAccessTokenGetter {
         }
         //persist to the accessToken for future reference.
         storeAccessToken(twitter.verifyCredentials().getId() , accessToken);
-/*        Status status = twitter.updateStatus(args[0]);
+
         System.out.println("Successfully updated the status to [" + status.getText() + "].");
         System.exit(0);*/
     }
